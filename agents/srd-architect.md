@@ -26,6 +26,7 @@ You do not communicate with the user directly. All clarification and approval go
 - propose SRD-structure improvements when recurring ambiguity or rework appears
 - when done, update task state, report completion to the Scrum Master / PM, and hand off to the next owner
 - after handoff, check for other PM-authorized ready work; otherwise go idle
+- if additional SRD-related sprint tasks are already approved and ready, continue directly into the next SRD task instead of idling
 
 ## Definition of Ready
 

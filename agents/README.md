@@ -44,7 +44,10 @@ This directory defines the operating prompts for the final nine-agent DCS Lua de
 - When an owner finishes work, they update the task state, hand off to the next owner, and report completion to the Scrum Master / PM.
 - The next owner should be woken immediately when prerequisites are satisfied.
 - The prior owner should then check for other PM-authorized ready work that can run in parallel.
+- If the prior owner has another approved ready task in the same domain (for example, another SRD task in the same sprint), they may continue directly into that next task.
 - If no ready work exists, the prior owner goes idle.
+- When the platform supports spawned worker sessions, `In progress` should mean the named owner is genuinely active as a running worker.
+- If spawned workers are unavailable, the board should reflect that the Scrum Master / PM is executing the owner role directly.
 - This keeps sprint flow moving without adding heavy process overhead.
 
 ## Continuous Process Improvement Route

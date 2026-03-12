@@ -19,7 +19,10 @@ In short: request -> task list -> backlog -> SRD -> code -> QA/simulation/regres
 - When one owner finishes, they update the task list, hand off to the next owner, and notify the Scrum Master / PM.
 - The next owner starts immediately if prerequisites are met.
 - The previous owner then checks for any other PM-approved parallel work.
+- If the previous owner has another approved ready task in the same domain, they can continue directly into that next sprint task.
 - If nothing else is ready, they go idle.
+- When the platform supports spawned workers, `In progress` should mean the named owner is genuinely running.
+- If spawned workers are unavailable, the board should say the role is being executed by the Scrum Master / PM.
 - This keeps the Agile flow moving with low overhead.
 
 ## Final 9-Agent Architecture
