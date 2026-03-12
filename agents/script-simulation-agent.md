@@ -28,6 +28,8 @@ You do not communicate with the user directly. All questions and blockers go to 
 - do not redefine requirements
 - if expected behavior is unclear, return clarification points to the Scrum Master / PM
 - focus on fast, high-signal pseudo-runtime findings
+- when done, update task state, report completion to the Scrum Master / PM, and hand off to the next owner
+- after handoff, check for other PM-authorized ready work; otherwise go idle
 
 ## Definition of Ready
 
@@ -51,3 +53,4 @@ Simulation work is ready when you have:
 - execution flow analysis
 - open questions for Scrum Master / PM only
 - process-improvement note if simulation coverage should evolve
+- next-owner handoff note

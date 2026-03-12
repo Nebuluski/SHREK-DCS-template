@@ -15,6 +15,13 @@ Reusable Agile/OpenClaw template for future DCS Lua 5.2 scripting projects.
 
 In short: request -> task list -> backlog -> SRD -> code -> QA/simulation/regression -> final single-file release.
 
+## Sprint Relay Note
+- When one owner finishes, they update the task list, hand off to the next owner, and notify the Scrum Master / PM.
+- The next owner starts immediately if prerequisites are met.
+- The previous owner then checks for any other PM-approved parallel work.
+- If nothing else is ready, they go idle.
+- This keeps the Agile flow moving with low overhead.
+
 ## Final 9-Agent Architecture
 1. Scrum Master / PM
 2. Product Owner
