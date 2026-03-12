@@ -1,0 +1,1 @@
+-- Future project single-file entrypoint placeholder.

@@ -1,0 +1,24 @@
+name: Lua CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lua 5.2 and LuaRocks
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lua5.2 luarocks
+      - name: Install tools
+        run: |
+          sudo luarocks install luacheck
+          sudo luarocks install busted
+      - name: Run checks
+        run: |
+          luacheck src/
+          lua5.2 -e "assert(loadfile('src/project.lua'))"
+          busted tests/

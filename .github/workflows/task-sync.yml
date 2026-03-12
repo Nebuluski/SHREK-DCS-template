@@ -1,0 +1,15 @@
+name: Update Master Task List
+
+on:
+  pull_request:
+    types: [opened, closed]
+  issues:
+    types: [opened, closed]
+
+jobs:
+  update-task-list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update Master Task List
+        run: echo "Update /docs/MASTER_TASK_LIST.md from issue/PR state here"
