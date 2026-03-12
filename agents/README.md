@@ -20,6 +20,8 @@ This directory defines the operating prompts for the final nine-agent DCS Lua de
 - If an agent needs clarification, it must return a concise clarification note to the Scrum Master / PM.
 - The Scrum Master / PM should resolve questions internally whenever possible and escalate to the user only when genuinely necessary.
 - `/srd/project-srd.md` is the single canonical requirements document.
+- `/docs/MASTER_TASK_LIST.md` is the mandatory coordination source of truth.
+- Significant work must be represented in `/docs/MASTER_TASK_LIST.md` before execution and updated as status changes.
 - SRD updates must be controlled and routed through the Scrum Master / PM.
 - No implementation starts before SRD approval.
 - All work must be reflected in the Master Task List.
@@ -27,15 +29,16 @@ This directory defines the operating prompts for the final nine-agent DCS Lua de
 
 ## Standard Work Flow
 1. Scrum Master / PM receives the request.
-2. Product Owner converts the request into backlog-ready work.
-3. SRD Architect updates or refines the canonical SRD if required.
-4. Scrum Master / PM obtains clarification/approval only when necessary.
-5. Lua Engineer implements against the approved SRD.
-6. QA Engineer validates against the SRD.
-7. Script Simulation Agent runs pseudo-runtime checks.
-8. Regression Testing Agent protects prior behavior.
-9. Performance Engineer optimizes and assembles the final single-file release candidate.
-10. Scrum Master / PM coordinates release readiness and all user-facing updates.
+2. Scrum Master / PM records or updates the work in `/docs/MASTER_TASK_LIST.md`.
+3. Product Owner converts the request into backlog-ready work.
+4. SRD Architect updates or refines the canonical SRD if required.
+5. Scrum Master / PM obtains clarification/approval only when necessary.
+6. Lua Engineer implements against the approved SRD.
+7. QA Engineer validates against the SRD.
+8. Script Simulation Agent runs pseudo-runtime checks.
+9. Regression Testing Agent protects prior behavior.
+10. Performance Engineer optimizes and assembles the final single-file release candidate.
+11. Scrum Master / PM updates the Master Task List as work progresses and coordinates all user-facing updates.
 
 ## Continuous Process Improvement Route
 - Every agent should watch for repeated friction, ambiguity, avoidable rework, or recurring failure patterns.
