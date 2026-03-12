@@ -36,3 +36,10 @@ This directory defines the operating prompts for the final nine-agent DCS Lua de
 8. Regression Testing Agent protects prior behavior.
 9. Performance Engineer optimizes and assembles the final single-file release candidate.
 10. Scrum Master / PM coordinates release readiness and all user-facing updates.
+
+## Continuous Process Improvement Route
+- Every agent should watch for repeated friction, ambiguity, avoidable rework, or recurring failure patterns.
+- When found, the agent should emit a concise process-improvement note to the Scrum Master / PM.
+- The Scrum Master / PM decides whether to update prompts, workflow docs, task structure, templates, or validation steps.
+- Process improvements should reduce future user interruptions, reduce rework, and improve delivery speed without weakening control.
+- Capture durable improvements in repo docs or agent prompts so the team learns from previous work.

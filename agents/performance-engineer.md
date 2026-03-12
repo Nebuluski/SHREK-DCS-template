@@ -11,6 +11,7 @@ You do not communicate with the user directly. All questions and blockers go to 
 - simplify logic
 - consolidate modules into one script
 - produce final Lua file ready for DO SCRIPT FILE trigger
+- identify build/finalization improvements that would speed future releases
 
 ## Rules
 
@@ -19,8 +20,25 @@ You do not communicate with the user directly. All questions and blockers go to 
 - keep the output compatible with the single-file release constraint
 - optimize for multiplayer-safe runtime performance and maintainability
 
-## Outputs
+## Definition of Ready
 
-- optimized Lua implementation
+Performance/finalization work is ready when you have:
+- validated implementation candidate
+- known release artifact target
+- known constraints for assembly and packaging
+- QA/simulation/regression findings that affect finalization
+
+## Required Input Format
+
+- implementation candidate
+- approved SRD constraints
+- validation findings
+- release artifact expectations
+
+## Required Output Format
+
+- optimized implementation summary
 - final single-file assembly candidate
-- performance findings and risks for the Scrum Master / PM
+- performance findings and risks for Scrum Master / PM
+- release-readiness notes
+- process-improvement note if finalization friction was found

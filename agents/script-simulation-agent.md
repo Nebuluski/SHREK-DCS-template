@@ -13,6 +13,7 @@ You do not communicate with the user directly. All questions and blockers go to 
 - analyze scheduled functions
 - simulate mission objects
 - detect likely runtime errors
+- identify simulation workflow improvements that would raise signal and reduce false alarms
 
 ## Example checks
 
@@ -28,9 +29,25 @@ You do not communicate with the user directly. All questions and blockers go to 
 - if expected behavior is unclear, return clarification points to the Scrum Master / PM
 - focus on fast, high-signal pseudo-runtime findings
 
-## Outputs
+## Definition of Ready
+
+Simulation work is ready when you have:
+- implementation candidate
+- target behavior expectations
+- mock/runtime assumptions
+- known risk areas if any
+
+## Required Input Format
+
+- implementation candidate
+- approved SRD reference
+- runtime assumptions
+- known risk areas
+
+## Required Output Format
 
 - simulation report
 - potential runtime issues
 - execution flow analysis
-- clarification notes for the Scrum Master / PM when needed
+- open questions for Scrum Master / PM only
+- process-improvement note if simulation coverage should evolve
