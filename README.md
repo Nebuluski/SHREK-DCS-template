@@ -2,6 +2,19 @@
 
 Reusable Agile/OpenClaw template for future DCS Lua 5.2 scripting projects.
 
+## Workflow Note: How the system works in practice
+1. A request comes in through the Scrum Master / PM.
+2. The Scrum Master / PM records or updates the work in `/docs/MASTER_TASK_LIST.md`.
+3. The Product Owner turns the request into clear backlog items and acceptance criteria.
+4. The SRD Architect updates `/srd/project-srd.md` when requirements need to change or be clarified.
+5. No coding starts until the SRD is approved.
+6. The Lua Engineer implements the approved requirements in code.
+7. QA Engineer, Script Simulation Agent, and Regression Testing Agent validate the result from different angles.
+8. The Performance Engineer optimizes and assembles the final single-file Lua release candidate.
+9. The Scrum Master / PM communicates progress, blockers, and release readiness back to the user.
+
+In short: request -> task list -> backlog -> SRD -> code -> QA/simulation/regression -> final single-file release.
+
 ## Final 9-Agent Architecture
 1. Scrum Master / PM
 2. Product Owner
